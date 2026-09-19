@@ -1,0 +1,87 @@
+.hero {
+  padding: 72px 0 96px;
+  overflow: hidden;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.hero__copy {
+  max-width: 560px;
+}
+
+.hero__title {
+  font-size: clamp(2.3rem, 5.4vw, 3.6rem);
+  margin-top: 22px;
+  color: var(--text);
+}
+
+.hero__subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-top: 22px;
+  max-width: 46ch;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.hero__visual {
+  display: flex;
+  justify-content: center;
+}
+
+.browser-assembly {
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+}
+
+/* One orchestrated load-in moment for the hero illustration's chips */
+.chip {
+  animation: settle 1.1s var(--ease) both;
+}
+
+.chip--1 {
+  animation-delay: 0.15s;
+  transform-origin: center;
+}
+
+.chip--2 {
+  animation-delay: 0.32s;
+}
+
+@keyframes settle {
+  from {
+    opacity: 0;
+    transform: translate(-14px, -10px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chip {
+    animation: none;
+  }
+}
+
+@media (min-width: 940px) {
+  .hero__inner {
+    grid-template-columns: 1.05fr 1fr;
+    gap: 40px;
+  }
+  .hero {
+    padding: 100px 0 120px;
+  }
+}
