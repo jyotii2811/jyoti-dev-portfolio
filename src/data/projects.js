@@ -10,23 +10,24 @@ export const projects = [
     category: 'Salon Website — Demo Concept',
     description: 'Services, pricing, gallery and a WhatsApp appointment flow for a beauty studio.',
     features: ['Services', 'Pricing', 'Gallery', 'Appointment/WhatsApp button', 'Google Maps', 'Responsive design'],
-    image: 'https://picsum.photos/seed/luxury-salon/800/600',
+    image: '/salon.jpg',
+    
     demoUrl: '/demos/luxury-salon',
   },
   {
-    title: 'Velvet Brew',
+    title: 'Cafe and Resto',
     category: 'Cafe Website — Demo Concept',
     description: 'A menu-first layout with featured items, gallery and opening hours for a cafe.',
     features: ['Menu', 'Featured items', 'Gallery', 'Location', 'Opening hours', 'Contact'],
-    image: 'https://picsum.photos/seed/velvet-brew/800/600',
+    image: '/resto.jpg',
     demoUrl: '/demos/velvet-brew',
   },
   {
-    title: 'Iron District',
+    title: 'Workout Center',
     category: 'Gym Website — Demo Concept',
     description: 'Membership plans, programs and trainer profiles for a fitness studio.',
     features: ['Membership plans', 'Programs', 'Trainers', 'Enquiry button', 'Location'],
-    image: 'https://picsum.photos/seed/iron-district/800/600',
+    image: '/gym.jpg',
     demoUrl: '/demos/iron-district',
   },
   {
@@ -34,7 +35,7 @@ export const projects = [
     category: 'Hotel Website — Demo Concept',
     description: 'Room listings, amenities and a booking enquiry flow for a boutique hotel.',
     features: ['Rooms', 'Amenities', 'Gallery', 'Location', 'Booking enquiry'],
-    image: 'https://picsum.photos/seed/royal-stay/800/600',
+    image: '/hotel.jpg',
     demoUrl: '/demos/royal-stay',
   },
 ]
