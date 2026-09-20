@@ -27,8 +27,12 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="hero__visual" aria-hidden="true">
-          <BrowserAssembly />
+        <div className="hero__visual">
+          <img
+            src="/profile.jpeg"
+            alt="Jyoti Singh"
+            className="hero__profile"
+            />
         </div>
       </div>
     </section>
